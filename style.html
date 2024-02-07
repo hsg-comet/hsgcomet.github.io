@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>영웅 소환!</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div id="nickname"></div>
+        <div id="playTime"></div>
+        <div id="moneyDisplay"></div>
+        <button id="summonButton" onclick="summon()">소환하기</button>
+        <div id="summonedImageContainer">
+            <img id="summonedImage">
+            <div id="imageDescription"></div>
+        </div>
+        <button id="resetButton" onclick="resetNickname()">닉네임 재설정</button>
+        <div id="saveLoadButtons">
+            <button id="saveButton" onclick="saveGameState()">저장하기</button>
+            <button id="loadButton" onclick="loadGameState()">불러오기</button>
+        </div>
+        <ul id="hallOfFame"></ul>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
